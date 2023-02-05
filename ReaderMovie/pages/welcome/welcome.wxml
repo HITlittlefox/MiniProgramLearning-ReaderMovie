@@ -1,0 +1,10 @@
+<!-- 骨架在wxml -->
+<view class="container">
+    <image class="user-avatar" src="../../images/avatar.jpg"></image>
+    <text class="user-name">Hello,pilot</text>
+    <!-- <button></button> -->
+    <view class="moto-container">
+        <text class="moto">开启小程序之旅</text>
+    </view>
+    <!-- width:300px height:225px -->
+</view>
