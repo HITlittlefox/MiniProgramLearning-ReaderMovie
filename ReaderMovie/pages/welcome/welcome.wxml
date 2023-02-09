@@ -1,10 +1,13 @@
-<!-- 骨架在wxml -->
 <view class="container">
-    <image class="user-avatar" src="../../images/avatar.jpg"></image>
-    <text class="user-name">Hello,pilot</text>
-    <!-- <button></button> -->
-    <view class="moto-container">
-        <text class="moto">开启小程序之旅</text>
+    <!-- <image class="avatar" src="/images/avatar/1.png"></image> -->
+    <l-avatar l-text-class="l-avatar-text" class="l-avatar" placement="bottom" open-data="{{['userAvatarUrl','userNickName']}}" size="180" />
+    <text class="motto">Hello,pilot</text>
+    <!-- <button></button> -->
+    <view bind:tap="onTap" class="journey-container">
+        <text class="journey">开启小程序之旅</text>
     </view>
-    <!-- width:300px height:225px -->
 </view>
+
+<!-- flex 容器布局 -->
+<!-- 路由API -->
+<!-- 事件的回调函数 -->
