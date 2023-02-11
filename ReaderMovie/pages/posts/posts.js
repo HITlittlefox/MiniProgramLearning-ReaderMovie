@@ -39,7 +39,9 @@ Page({
     });
   },
 
+  // 自定义事件
   onGoToDetail(event) {
+    // 轮播栏post详情页|post详情页
     const pid = event.currentTarget.dataset.postId | event.detail.pid;
     wx.navigateTo({
       url: "/pages/post-detail/post-detail?pid=" + pid,

@@ -14,13 +14,12 @@ Component({
 
   /**
    * 组件的方法列表
-   * 组件的开发者不应该决定
-   * 点击之后做什么事情 不应该
-   * 组件的使用者
-   * 自定义事件
+   * 组件的开发者不应该决定点击之后做什么事情
+   * 组件的使用者自定义事件
    */
   methods: {
     onTap(event) {
+      //数据在properties
       const pid = this.properties.res.postId;
       this.triggerEvent("posttap", {
         pid,
